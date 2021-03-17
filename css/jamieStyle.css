@@ -1,0 +1,551 @@
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+body {
+  font-family: 'Ubuntu', serif;
+  /* font-size: 48px; */
+}
+
+h5 {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+h2 {
+  padding-top: 30%;
+
+}
+
+                                      /* Splash screen section */
+.splashScreen
+{
+    /* The image used */
+    background-image: url("Images/splashScreens/splashScreen.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+    max-height: 140%;
+    margin: 0;
+    padding: 0;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carousel-caption-splash-screen {
+  border: solid;
+  color: white;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  top: 30%;
+  bottom: auto;
+  max-height: 60%;
+  max-width: 60%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+
+.textBox {
+  vertical-align: middle;
+  text-align: middle;
+  /* border: solid; */
+}
+
+.animate-reveal {
+  opacity: 0;
+  -webkit-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  -moz-animation: reveal 1s ease-in 1 normal forwards;
+  -o-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+.animate-first {
+  font-size: 3vw;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+
+.animate-second {
+  font-size: 3vw;
+  animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animate-third {
+  font-size: 3vw;
+  animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animate-fourth {
+  font-size: 3vw;
+  animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+                                      /* Hobbies Section */
+.hobbiesContainer {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+
+                                      /* Education Section */
+.EducationContainer {
+  background-image: url("Images/splashScreens/meAndHolly.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100vw;
+  /* min-height: 100vh; */
+  /* max-height: 240%; */
+
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+  color: white;
+}
+
+.EducationContainer .card {
+    background-color: rgba(245, 245, 245, 0);
+}
+
+.projectorCard {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.projectorScreen-wrapper {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  /* align-content: center; */
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+}
+
+.projectorScreen-wrapper iframe {
+  box-sizing: border-box;
+  background: url(Images/Education//projector.png) center center no-repeat;
+  background-size: contain;
+  padding: 11.9% 15.5% 14.8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* The Animated Bar Graph */
+
+.graphCard {
+  padding: 0;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  height: 100%;
+}
+
+.bar-graph {
+  padding: 0;
+  padding-bottom: 5%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 90%;
+  margin: 0;
+}
+
+.bar-graph li {
+  display: block;
+  padding: 0.75vw 0;
+  position: relative;
+  text-align:center;
+  vertical-align: bottom;
+  border-radius: 8px 8px 0 0;
+  max-width: 20%;
+  height: 100%;
+  margin: 0 3.8% 0 0;
+  -webkit-flex: 1 1 15%;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
+
+}
+
+.bar-graph .bar-graph-axis {
+  -webkit-flex: 1 1 8%;
+      -ms-flex: 1 1 8%;
+          flex: 1 1 8%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bar-graph .bar-graph-label {
+  margin: 0;
+  background-color: none;
+  color: #8a8a8a;
+  position: relative;
+  white-space: nowrap;
+  font-size: 1vw ;
+  color: white;
+  overflow: hidden;
+}
+
+.bar-graph .description {
+  writing-mode: vertical-rl;
+  width: 100%;
+  position:relative;
+  font-size: 0.8vw;
+  overflow: hidden;
+  color: white;
+  vertical-align: middle;
+}
+
+.bar-graph .bar.one {
+  background-color: #7aa8e0;
+  overflow: hidden;
+  animation-name: barAnimate;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+}
+
+.bar-graph .bar.two {
+  background-color: #dbe07a;
+  overflow: hidden;
+  animation-name: barAnimate;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;}
+
+.bar-graph .bar.three {
+  background-color: #e07f7a;
+  overflow: hidden;
+  animation-name: barAnimate;
+  -webkit-animation-name:barAnimate;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  height: 100%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes barAnimate {
+    from   { height:0%;}
+    /* to     { height:100px;} */
+}
+
+/* Standard syntax */
+@keyframes barAnimate {
+  from   {height:0%;}
+  /* to     { height:100%;} */
+}
+
+@media only screen and (max-width: 575px) {
+.graphCard {
+  height:250px;
+  }
+.bar-graph .bar-graph-label {
+  font-size: 2vw;
+  }
+.bar-graph .description {
+  font-size: 2vw;
+  }
+}
+                                      /* Work Experience Section */
+.workExperienceContainer {
+  /* padding-top: 5%; */
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.overlay {
+  position: absolute;
+  top:inherit;
+  bottom:inherit;
+  left:0;
+  right:inherit;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  padding: .5rem;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+                                      /* Example Work Section */
+.PortfolioContainer {
+  background-image: url("Images/splashScreens/paralaxPortfolios.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100vw;
+  /* max-height: 140%; */
+  /* min-height: 70vh; */
+  padding-top: 3%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-bottom: 3%;
+  color: black;
+}
+
+.carousel-caption {
+  overflow: visible;
+  padding-bottom: 15%;;
+  padding-top: 15%;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  /* outline: black; */
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  background-image: none;
+  /* padding-top:1vw;
+  padding-bottom: 5vw; */
+  top:0;
+  bottom:0;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 5vw;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 5vw;
+  color: black;
+}
+
+#myWorkSoFar
+{
+  position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0
+}
+
+#myWorkSoFar #carouselExampleControls{
+  box-sizing: border-box;
+      background: url(Images/PortfolioExamples/macBlack.png) center center no-repeat;
+      background-size: contain;
+      padding-left:27.35%;
+      padding-top:8.6%;
+      padding-right:42.8%;
+      padding-bottom:40.8%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin-top: 3%;
+}
+
+#myWorkSoFar #carouselExampleControls .carousel-caption{
+  /* overflow: hidden; */
+}
+
+#myWorkSoFar #carouselExampleControls h5{
+  color:black;
+  font-size: 2vw;
+}
+
+#myWorkSoFar #carouselExampleControls a{
+  text-decoration: none;
+  text-decoration: underline;
+  font-size: 1vw;
+}
+
+@media only screen and (max-width: 720px) {
+  #myWorkSoFar #carouselExampleControls{
+    padding-left:26.75%;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+      padding-top:4vw;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #myWorkSoFar #carouselExampleControls{
+    padding-left:26.1%;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+      padding-top:6vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #myWorkSoFar #carouselExampleControls{
+    padding-right:42.3%;
+    padding-left:25.5%;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+      padding-top:10vw;
+  }
+}
+                                      /* Contant Me Section */
+
+.contactMe {
+  padding-top: 3%;
+  padding-bottom: 8%;
+  width: 100vw;
+  padding-top: 3%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-bottom: 10%;
+}
+
+.imgContainer {
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.contactCard {
+  position:relative;
+  display:block;
+  margin-left: 25%;
+  /* margin-right: 50%; */
+  width: 50%;
+  height: auto;
+  left: 0;
+  top: 0;
+  /* bottom: 0; */
+  z-index: -1;
+}
+
+.contactCardBase {
+  position: absolute;
+  display:block;
+  margin-left: 25%;
+  /* margin-bottom: 2%; */
+  bottom: -5vh;
+  /* bottom: 0; */
+  /* margin:auto; */
+  width: 50%;
+  height: auto;
+}
