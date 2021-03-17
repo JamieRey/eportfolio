@@ -1,8 +1,7 @@
-# EPortfolio
-My Website
+# E-Portfolio
 
-Hello,
+**LAST UPDATED: March 2018**
 
-I'm Jamie and I'm not quite sure what I'm doing at the moment, I'll get there soon enough.
+Here lies the files for my e-portfolio website, coded from scratch.
 
-It seems I'm making some progress, better commit
+Please note that my skills have vastly progressed since coding this. It's here out of sentiment.
